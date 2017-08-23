@@ -38,7 +38,7 @@ function setIntervals(data) {
   if (intervalMs < 0) {
     call( getUrl(this.id, 'publish'), 'POST');
     console.log('Resume id: ' + this.id + ' was updated');
-    setTimeout(() => call('mine', 'GET', addIds), 14400000);
+    call(getUrl(this.id), 'GET', setIntervals.bind({id : this.id}));
   } else {
     let hours = parseInt(intervalMs / 1000 / 60 / 60 %24),
         minutes = parseInt(intervalMs / 1000 / 60 %60);
