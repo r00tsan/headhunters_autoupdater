@@ -5,4 +5,6 @@ Usage:
 2. use command: 'node hh_autoupdater.js XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 where XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX - your auth token
 
+P/S: Token you can get here: https://dev.hh.ru/admin/ 
+
 That's all ;)
